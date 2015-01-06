@@ -1,0 +1,456 @@
+@import url(http://fonts.googleapis.com/css?family=Roboto);
+
+@-webkit-keyframes infinite-spinning {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@-moz-keyframes infinite-spinning {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+@-o-keyframes infinite-spinning {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+@keyframes infinite-spinning {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+/*..........................rotate............*/
+
+@-webkit-keyframes shift{
+      from {left: 210; }
+      to {left: 60;}
+    }
+@-moz-keyframes shift{
+      from {left: 210; }
+      to {left: 60;}
+    }
+@-o-keyframes shift{
+      from {left: 210; }
+      to {left: 60;}
+    }
+@keyframes shift{
+      from {left: 210; }
+      to {left: 60;}
+    }
+
+/*...............................................*/
+
+#tracklist{
+  display: inline-block;
+  height: 500px;
+  width:100%;
+  min-width:400px;
+  white-space: nowrap;
+  overflow-x: auto;
+}
+.collection{
+      position: fixed;
+      bottom: 0px;
+      left: 0%;
+      height: 300px;
+      width:100%;
+      z-index: 2;
+
+      -webkit-transition: all 500ms ease-out;
+    -moz-transition: all 500ms ease-out;
+    -o-transition: all 500ms ease-out;
+    -ms-transition: all 500ms ease-out;
+    transition: all 500ms ease-out;
+     }
+
+.base{
+      position: fixed;
+      bottom: 0px;
+      height: 200px;
+      width: 100%;
+      background-color: #FA6900;
+      left: 0px;
+      z-index: 2;
+
+      -webkit-transition: all 500ms ease-out;
+    -moz-transition: all 500ms ease-out;
+    -o-transition: all 500ms ease-out;
+    -ms-transition: all 500ms ease-out;
+    transition: all 500ms ease-out;
+
+     }
+
+.trackItem{
+
+      height: 150px;
+      width: auto;
+      margin: 10px;
+      display: inline-block;
+      position: relative;
+      vertical-align: bottom;
+      left: 0px;
+
+      /*height: 150px;
+      width: auto;
+      margin: 10px;
+      display: inline-block;
+      vertical-align: top;
+      /*border: solid 1px black;*/
+      /*bottom: 200px;*/*/
+
+     }
+     .outerdiv{
+      height: 150px;
+      width: 150px;
+      background-color: #888888;
+      border-radius: 50%;
+      overflow: hidden;
+      /*box-shadow: 0px 0px 1px 0px #888888;  */
+
+      display: inline-block;
+      border: solid 4px #FA6900;
+    
+    /*..................*/
+    -webkit-transition: all 200ms ease-out;
+    -moz-transition: all 200ms ease-out;
+    -o-transition: all 200ms ease-out;
+    -ms-transition: all 200ms ease-out;
+    transition: all 200ms ease-out;
+  /*.........................*/
+
+   }
+
+     /*img{
+    
+    height: 100%;
+    width: 100%;
+     }*/
+     span{
+      /*display: inline-block;*/
+      vertical-align: top;
+      font-family: "Open Sans","Lucida Grande","Lucida Sans Unicode","Lucida Sans",Verdana,Tahoma,sans-serif;
+      margin: 10px;
+      color: #444;
+      
+     }
+     .title{
+      font-weight: 300;
+      font-size: 1em;
+      height: 50px;
+    width: 200px;
+      overflow: hidden;
+     }
+     .name{
+      font-weight: 700;
+      font-size: 1em;
+      height: 50px;
+    width: 200px;
+      overflow: hidden;
+     }
+ /*.................................................................*/
+
+
+#musicbutton{
+  width: 308px;
+  height: 308px;
+/*  border-radius: 50px; */
+/*   box-shadow: 0px 0px 2px; */
+  position: absolute;
+  left:0px;
+  z-index:1;
+  /*..................*/
+    -webkit-transition: all 200ms ease-out;
+    -moz-transition: all 200ms ease-out;
+    -o-transition: all 200ms ease-out;
+    -ms-transition: all 200ms ease-out;
+    transition: all 200ms ease-out;
+  /*.........................*/
+      
+}
+
+#musicbutton:hover{
+  background-color: #EEE;
+}
+
+.playButton{
+  /*background: url('http://www.travelteq.com/afbeeldingen/play.png') no-repeat;*/
+  background: url('/icons/play.png') no-repeat;
+
+  background-size: 180px 180px;
+  background-position: 53% 53%;
+  opacity: 0.8; 
+}
+
+.pauseButton{
+  /*background: url('http://png-5.findicons.com/files/icons/2315/default_icon/128/media_pause.png') no-repeat;*/
+  background: url('/icons/media_pause.png') no-repeat;
+  background-size: 100px 100px;
+  background-position: 50% 50%;
+  opacity: 0.8;
+}
+
+.imgcover{
+  width: 200px;
+  height: 100%;
+}
+
+.trackItem{
+  color: #222222;
+  font-family: "Roboto","Lucida Grande","Lucida Sans Unicode","Lucida Sans",Verdana,Tahoma,sans-serif;
+  cursor: pointer;
+
+  /*..................*/
+    /*-webkit-transition: all 500ms ease-out;
+    -moz-transition: all 500ms ease-out;
+    -o-transition: all 500ms ease-out;
+    -ms-transition: all 500ms ease-out;
+    transition: all 500ms ease-out;*/
+  /*.........................*/
+}
+
+.outerdiv:hover{
+  box-shadow: 0px 0px 0px 4px white;
+}
+
+.trackItem:nth-child(1) .outerdiv{
+  -webkit-animation: infinite-spinning 5s infinite;
+    -moz-animation: infinite-spinning 5s infinite;
+    -o-animation: infinite-spinning 5s infinite;
+    -ms-animation: infinite-spinning 5s infinite;
+    animation: infinite-spinning 5s infinite;
+}
+
+/*..................main song object set.......................*/
+    #mainholder{
+        position: fixed;
+        min-left: 150px;
+        left: 50%;
+        top: 40%;
+        margin-top:-150px;
+        margin-left:-30%;
+        height: 300px;
+        width: 60%;
+        white-space: nowrap;
+        /*background-color: #333;*/
+      }
+      #coverArt{
+      position: relative;
+      display: inline-block; 
+      /*height: 97.5%;*/
+      border: solid 4px #FA6900;
+      width: 300px;
+
+      /*..................*/
+    -webkit-transition: all 200ms ease-out;
+    -moz-transition: all 200ms ease-out;
+    -o-transition: all 200ms ease-out;
+    -ms-transition: all 200ms ease-out;
+    transition: all 200ms ease-out;
+  /*.........................*/      
+      }
+
+      #coverArt:hover{
+        background-color: #888;
+      }
+      img{
+        height: 100%;
+        width: auto;
+      }
+      #main-content{
+        display:inline-block;
+        vertical-align: top;
+        width: inherit;
+      }
+      #currentSong{
+        color: #FA6900;
+        font-size: 1.5em;
+        width: 100%;
+        font-family: "Lucida Grande","Lucida Sans Unicode","Lucida Sans",Verdana,Tahoma,sans-serif;
+        width: inherit;
+
+      }
+      #currentArtist{
+        color: #333;
+        font-size: 4em;
+        width: 100%;
+        font-family: "Lucida Grande","Lucida Sans Unicode","Lucida Sans",Verdana,Tahoma,sans-serif;
+      }
+
+      #currentSong, #currentArtist{
+    -webkit-transition: all 500ms ease-out;
+  -moz-transition: all 500ms ease-out;
+  -o-transition: all 500ms ease-out;
+  -ms-transition: all 500ms ease-out;
+  transition: all 500ms ease-out;
+  }
+/*................end main song set..........................*/
+#logo{
+  width: 170px;
+  height: 150px;
+  background: url('/icons/endless-logo1.png') no-repeat;
+  background-size: 160px 150px;
+  background-position: 50% 50%;
+  cursor: pointer;
+  z-index: 20;
+/*   box-shadow: 0px 0px 1px 0px #888888; */
+
+  -webkit-transition: all 500ms ease-out;
+  -moz-transition: all 500ms ease-out;
+  -o-transition: all 500ms ease-out;
+  -ms-transition: all 500ms ease-out;
+  transition: all 500ms ease-out;
+}
+
+@media all and (max-width: 900px) {
+    /*#mainholder{
+        margin-left: 0px;
+        left: 220px;
+    }*/
+    #logo{
+  width: 80px;
+  height: 75px;
+  background: url('/icons/endless-logo1.png') no-repeat;
+  background-size: 80px 75px;
+  background-position: 50% 50%;
+  cursor: pointer;
+  z-index: 20;
+/*   box-shadow: 0px 0px 1px 0px #888888; */
+
+  -webkit-transition: all 500ms ease-out;
+  -moz-transition: all 500ms ease-out;
+  -o-transition: all 500ms ease-out;
+  -ms-transition: all 500ms ease-out;
+  transition: all 500ms ease-out;
+  }
+
+  #mainholder{
+    margin-top: -200px;
+    white-space: normal;
+  }
+
+  #coverArt{
+      width: 250px;
+      height: 250px;
+  }
+
+  #musicbutton{
+  width: 260px;
+  height: 258px;
+}
+
+    #currentSong{
+        color: #FA6900;
+        font-size: 1em;
+        width: 100%;
+        font-family: "Lucida Grande","Lucida Sans Unicode","Lucida Sans",Verdana,Tahoma,sans-serif;
+        width: inherit;
+        white-space: nowrap;
+
+      }
+      #currentArtist{
+        color: #333;
+        font-size: 2em;
+        width: 100%;
+        font-family: "Lucida Grande","Lucida Sans Unicode","Lucida Sans",Verdana,Tahoma,sans-serif;
+        white-space: nowrap;
+      }
+
+  #currentSong, #currentArtist{
+    -webkit-transition: all 500ms ease-out;
+  -moz-transition: all 500ms ease-out;
+  -o-transition: all 500ms ease-out;
+  -ms-transition: all 500ms ease-out;
+  transition: all 500ms ease-out;
+  }
+}
+
+@media all and (max-height: 700px) {
+
+  .trackItem{
+    /*padding: 10px;*/
+    width: 200px;
+    left: 0px;
+
+    
+  }
+  .collection{
+      position: fixed;
+      bottom: -100px;
+      left: 0%;
+      height: 300px;
+      width:100%;
+      z-index: 2;
+
+      -webkit-transition: all 500ms ease-out;
+    -moz-transition: all 500ms ease-out;
+    -o-transition: all 500ms ease-out;
+    -ms-transition: all 500ms ease-out;
+    transition: all 500ms ease-out;
+     }
+
+.base{
+      position: fixed;
+      bottom: 0px;
+      height: 100px;
+      width: 100%;
+      background-color: #FA6900;
+      left: 0px;
+      z-index: 2;
+
+     -webkit-transition: all 500ms ease-out;
+    -moz-transition: all 500ms ease-out;
+    -o-transition: all 500ms ease-out;
+    -ms-transition: all 500ms ease-out;
+    transition: all 500ms ease-out;
+
+     }
+
+  .title, .name{
+    display: none;
+    /*opacity: 0;*/
+
+    -webkit-transition: all 500ms ease-out;
+    -moz-transition: all 500ms ease-out;
+    -o-transition: all 500ms ease-out;
+    -ms-transition: all 500ms ease-out;
+    transition: all 500ms ease-out;
+  }
+}
+
+@media all and (max-height: 600px) {
+  #tracklist{
+    height: 200px;
+    margin: 0px;
+
+    overflow-y: hidden;
+  }
+  .collection{
+    position: absolute;
+    top:400px;
+    height: 100px;
+  }
+
+  .base{
+    position: absolute;
+    top:500px;
+  }
+
+  #mainholder{
+    position: absolute;
+    top: 250px;
+  }
+}

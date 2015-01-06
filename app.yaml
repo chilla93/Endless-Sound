@@ -1,0 +1,32 @@
+application: endlesound
+version: 1
+runtime: python27
+api_version: 1
+threadsafe: yes
+
+handlers:
+- url: /favicon\.ico
+  static_files: favicon1.ico
+  upload: favicon1\.ico
+
+- url: /stylesheets
+  static_dir: stylesheets
+
+- url: /js
+  static_dir: js
+
+- url: /swf
+  static_dir: swf
+
+- url: /icons
+  static_dir: icons
+
+- url: .*
+  script: main.app
+
+libraries:
+- name: webapp2
+  version: "2.5.2"
+- name: jinja2
+  version: latest
+

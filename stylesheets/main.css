@@ -1,0 +1,108 @@
+/*..... cjklt Main Css.............*/
+
+@import url(http://fonts.googleapis.com/css?family=Roboto);
+
+body{
+	background-color: #F5F5F5;
+	font-family: "Roboto","Lucida Grande","Lucida Sans Unicode","Lucida Sans",Verdana,Tahoma,sans-serif;
+	color: #333;
+}
+h2, h3 {
+	color: #FF6600;
+}
+#searchBlock{
+	display: inline-block;
+	font-size: 1.2em;
+
+}
+
+#linkSearch{
+	margin-left: 20px;
+	border: 0px solid black;
+	border-bottom: 1px solid #555;
+	background-color: transparent;
+	font-family: "Roboto","Lucida Grande","Lucida Sans Unicode","Lucida Sans",Verdana,Tahoma,sans-serif;
+	font-size: 1em;	
+	color: #555;
+	width: 400px;
+	background: url(https://cdn1.iconfinder.com/data/icons/windows-8-metro-style/512/search.png) no-repeat;
+	background-size: 18px 18px;
+	background-position: right center;
+
+	
+}
+
+#submit{
+	display: none;
+}
+
+#results{
+	width: 100%;
+	/*background-color: white;*/
+	height: 100%;
+}
+
+.itemImage{
+	box-shadow: 0px 0px 1px 1px #888888;
+	width: 150px;
+	height: 150px;
+	vertical-align: center;
+}
+
+.itemContent{
+	display: inline-block;
+	vertical-align: top;
+	margin-left: 20px;
+	width: 350px
+}
+
+.itemName{
+	color: #FF6600;
+	font-size: 2.5em;	
+}
+
+.permalink{
+	font-size: 1em;
+	text-decoration: none;
+	color: #1a0dab;
+}
+
+.resultItem{
+	padding: 5px;
+	margin: 0px;
+	
+	display: inline-block;
+	border: 0px;
+	cursor: pointer;
+	/*..................*/
+    -webkit-transition: all 200ms ease-out;
+    -moz-transition: all 200ms ease-out;
+    -o-transition: all 200ms ease-out;
+    -ms-transition: all 200ms ease-out;
+    transition: all 200ms ease-out;
+	/*.........................*/
+}
+
+.resultItem:hover{
+	background-color: white;
+	opacity: 0.6;
+}
+
+.followers{
+	margin-left: 20px
+	
+}
+.followers::before{
+	content: "Followers: ";
+	color: #888;
+}
+
+.itemId::before{
+	content: "Id: ";
+	color: #888;
+}
+
+#response{
+	color: #1a0dab;
+	
+}
